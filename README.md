@@ -1,1 +1,1 @@
-A tool to foucs concerned node from big or complex json
+**A tool to extract the concerned node from a big or complex JSON.**
