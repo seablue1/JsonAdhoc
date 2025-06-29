@@ -327,7 +327,7 @@ const handleClose = (tag) => {
     }
 }
 
-watch(filterCondition, () => {
+watch(()=>[filterCondition, mainJsonStruct], () => {
     pathMap.clear()
     subJson.value = traveljson2(mainJson.value, filterCondition.value, [], pathMap, [])
     nextTick(() => {
