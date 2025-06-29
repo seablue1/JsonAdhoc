@@ -42,10 +42,8 @@
                             @textSelectionChange="mainEditorSelect" ref="mainEditor" currentMode="code"
                             @change="mainEditorChange" />
                     </el-tab-pane>
-                    <el-tab-pane label="table" name="table">
-                        <div style="overflow-y: auto;">
-                            <JsonTable :data="mainJson" />
-                        </div>
+                    <el-tab-pane label="table" name="table" style="overflow: auto;height: 100%;">
+                        <JsonTable :data="mainJson" />
                     </el-tab-pane>
                 </el-tabs>
             </el-main>
