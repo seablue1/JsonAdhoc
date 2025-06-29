@@ -90,6 +90,12 @@ const selectedNode = ref([])
 
 const filterInput = ref('')
 const filterCondition = ref([])
+onMounted(() => {
+    filterCondition.value.push({
+        "type": SearchType.JsonPath,
+        "value": "data.HotelListData.hotelList[:].price"
+    })
+})
 
 const tree = ref([])
 const treeRef = ref()
