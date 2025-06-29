@@ -94,6 +94,10 @@ onMounted(() => {
     filterCondition.value.push({
         "type": SearchType.JsonPath,
         "value": "data.HotelListData.hotelList[:].price"
+    }),
+    filterCondition.value.push({
+        "type": SearchType.JsonPath,
+        "value": "data.HotelListData.hotelList[:].hasFlag.vrPicture"
     })
 })
 
